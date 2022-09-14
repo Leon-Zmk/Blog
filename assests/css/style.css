@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primary-soft:#f3f3f3;
+    --primary-white:#ffffff;
+}
+
+.nav-menu ul{
+    list-style-type: none;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.menu-title{
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#acaaaa;
+}
+
+.menu-item-link{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 0.25rem;
+}
+.menu-item:hover{
+    background-color:#007bff !important;
+    border-radius: 0.25rem;
+}
+.menu-item-link.active{
+    background-color: #007bff !important;
+    color: white;
+}
+
+
+.menu-item-link:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-space{
+    padding: 10px 0px;
+}
+.content{
+    background-color: var(--primary-soft);
+    box-shadow: 0.125rem .25rem rgba(0, 0, 0,.075) inset;
+}
+.header{
+    position:sticky;
+    top:10px;
+    z-index: 2000;
+}
+
+.nav-brand{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.show-sidebar-btn{
+    cursor: pointer;
+    font-size: 2rem;
+}
+.user-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.card{
+    border: none;
+}
+.card-status{
+    transition: 1s;
+}
+.card-status:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+.card-status:active{
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+.users{
+    margin-left: -25px;
+    cursor: pointer;
+}
+.item-carousel{
+    margin-top: -100px;
+}
+.item-card-img{
+    height: 200px;
+}
+table{
+    font-size: 12px;
+  
+}
+table tr, table td{
+    margin-bottom: 0px;
+   
+}
+.full-card{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+    z-index: 2005;
+}
+.front-panel-right-sidebar{
+    position: sticky;
+    top: 15px;
+}
+.post{
+    transition: 0.5s;
+}
+.post:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 0.375rem 0.75 rem rgba(0, 0, 0,0.075) !important;
+}
+@media screen and (max-width:780px){
+
+  
+
+.sidebar{
+    width: 300px;
+    display: block !important;
+    position:fixed;
+    z-index: 2001;
+    background-color:var(--primary-white) ;
+    margin-left: -500px;
+}
+.item-card-carousel{
+    margin-top: 90px;
+}
+.h{
+    font-size: 15px;
+}
+}
